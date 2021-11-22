@@ -12,7 +12,3 @@ services:
   juiceshop:
     restart: always
     image: bkimminich/juice-shop
-
-
-volumes:
-  gitea:
