@@ -1,4 +1,4 @@
-20.74.80.66 {
+cobaye.tic.sh {
   log {
     output stdout
   }
