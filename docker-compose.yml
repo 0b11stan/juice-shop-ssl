@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+  proxy:
+    restart: always
+    build: ./proxy
+    ports:
+      - 443:443
+    depends_on:
+      - juiceshop
+
+  juiceshop:
+    restart: always
+    image: bkimminich/juice-shop
+
+
+volumes:
+  gitea:
