@@ -8,10 +8,3 @@ cobaye.tic.sh {
   }
   reverse_proxy juiceshop:3000
 }
-
-20.74.80.66 {
-  log {
-    output stdout
-  }
-  reverse_proxy juiceshop:3000
-}
