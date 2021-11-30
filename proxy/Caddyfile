@@ -1,4 +1,4 @@
-cobaye.tic.sh {
+localhost {
 	tls /etc/caddy/ssl/cert.pem /etc/caddy/ssl/key.pem
 	log {
 		output stdout

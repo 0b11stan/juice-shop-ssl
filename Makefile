@@ -9,6 +9,7 @@ clean:
 	-rm -r proxy/ssl
 
 up: proxy/ssl
+	sed -i 's/^localhost/$(DOMAIN)/' proxy/Caddyfile
 	docker-compose up --build -d
 
 down:
