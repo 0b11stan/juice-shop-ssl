@@ -9,15 +9,7 @@ services:
       - 80:80
     depends_on:
       - juiceshop
-    volumes:
-      - caddy_data:/data
-      - caddy_config:/config
 
   juiceshop:
     restart: always
     image: bkimminich/juice-shop
-
-volumes:
-  caddy_data:
-    external: true
-  caddy_config:

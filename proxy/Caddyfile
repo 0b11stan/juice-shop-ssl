@@ -1,10 +1,7 @@
-{
-  acme_ca https://acme-staging-v02.api.letsencrypt.org/directory
-}
-
 cobaye.tic.sh {
-  log {
-    output stdout
-  }
-  reverse_proxy juiceshop:3000
+	tls /etc/caddy/ssl/cert.pem /etc/caddy/ssl/key.pem
+	log {
+		output stdout
+	}
+	reverse_proxy juiceshop:3000
 }
